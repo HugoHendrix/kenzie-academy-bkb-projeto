@@ -1,0 +1,371 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+
+html, body {
+    width:100%;
+    height:100%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+
+:root {
+    --back-principal:#e5e5e5;
+    --back-secundario:#f5f3f0;
+    --gradiente: hsl(36,55.56%,91.18%);
+    --branco:white;
+    --marrom:#502314;
+    --vermelho:#db3b1d;
+    --laranja:#ff8627;
+    --preto:#000000;
+
+    font-size: 62.5%;
+
+}
+
+
+body{
+    background-color: var(--gradiente);
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.6rem;
+}
+
+.container{
+    max-width: 133rem;
+    margin: 0 auto;
+    padding:3rem;
+}
+
+/* APLICANDO ESTILO NO CABEÇALHO */
+.cabecalho .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cabecalho {
+    border-bottom: 3px solid var(--vermelho);
+}
+
+
+/*imagem do whooper gigante*/
+
+.container-whooper {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    
+}
+
+/*botão começar pedido*/
+
+.btn-whooper {
+    display: flex;    
+    justify-content:center;
+    align-items: center;
+    width: 21.9rem;
+    height: 5.1rem;
+    background: var(--vermelho);
+    border: 4px solid var(--vermelho);
+    border-radius: 1rem;
+    text-align: center;
+    font-weight: 400;
+    font-size: 2.2rem;
+    color: #FFFFFF;
+    cursor: pointer;
+    margin-inline: auto;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+}
+
+.btn-whooper a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.btn-whooper:hover {
+    background-color:var(--laranja);
+    border:var(--laranja);
+}
+
+
+
+/*Paragrafo forma de pagamento*/
+
+.pagamento  {
+   text-align: center;
+   margin-top: 2.8rem;
+   font-size: 2.8rem;
+   line-height: 3.2rem;
+   font-weight: 500;
+   color: var(--marrom);
+}
+
+/*eai qual vai ser?*/
+
+#container_principal {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3rem 0;
+    
+}
+
+#container_principal > img {
+    width: 11rem;
+    margin-bottom: 1rem;
+    
+}
+
+#container_titulo {
+    color: var(--marrom);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 0;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+#container_titulo > h1 {
+    font-weight: 600;
+    font-size: 5rem;
+    margin-bottom: 1.5rem;
+}
+
+#container_titulo > p {
+    font-weight: 300;
+    font-size: 4rem;
+    
+
+}
+
+/* SECTION OPÇÕES */
+#section_opcoes {
+    display: flex;
+    
+}
+
+#section_opcoes > div {
+    border: 3px solid var(--vermelho);
+    border-radius: 8px;
+    margin: 1.5rem;
+    height: 30rem;
+    width: 23rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  
+}
+
+
+#section_opcoes > div > img {
+    width: 10rem;
+    margin-bottom: 1.5rem;
+}
+
+#section_opcoes > div > a {
+    text-decoration: none;  
+    color: var(--vermelho);
+    font-style: italic;
+    font-weight: 300;
+    font-size: 3.5rem;
+    width: 13rem;
+    text-align: center;
+    line-height: 3rem;
+}
+
+#section_opcoes > div > a:hover {
+    color: var(--laranja);
+   
+}
+#section_opcoes > div:hover {
+    border-color: var(--laranja);
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+
+}
+
+
+/* APLICANDO ESTILO NA SEÇÃO DE PRODUTOS */
+.secaoProdutos{
+    padding-top: 7.4rem;
+    
+}
+.secaoProdutos .produtosLista{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.secaoProdutos .cardProduto{
+    background-color: white;
+    width: 23.rem;
+    text-align: center;
+    padding: 2.8rem 2.9rem;
+    border: 2px solid #F5EBDC;
+    border-radius: 2.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+.secaoProdutos .cardProduto img{}
+.secaoProdutos .cardProduto h3{
+    color: var(--marrom);
+    font-size:2rem;
+    font-weight: 700;
+    margin:2.8rem auto;
+    min-height: 4rem;
+    max-width: 16rem;
+    
+}
+.secaoProdutos .cardProduto p{
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 2.8rem;
+}
+.secaoProdutos .cardProduto button{
+    background: var(--back-secundario);
+    border:none;
+    border-radius: 8px;
+    width: 177px;
+    height: 41px;
+    color: #2D2D2D;
+    font-weight: 500;
+    font-size: 1.8rem;
+    cursor: pointer;
+    font-family: 'Nunito', sans-serif;
+}
+
+/* RODAPÉ */
+.carrinho .infoResumo{
+    background: var(--marrom);
+    border-radius: 3.2rem 3.2rem 0px 0px;
+    padding: 2.3rem 0;
+}
+.carrinho .container{
+    display: flex;
+    justify-content: space-between;
+}
+.carrinho {
+    background-color: var(--back-secundario);
+}
+.carrinho .infoUsuario h3{
+    font-weight: 500;
+    font-size: 3.2rem;
+    color: var(--back-secundario);
+    margin-bottom: 1.8rem;
+}
+.carrinho .infoUsuario p{
+    font-style: italic;
+    font-weight: 200;
+    font-size: 2.2rem;
+    line-height: 3rem;
+    color: var(--back-secundario);
+}
+.carrinho .infoResumo .infoPreco{
+    font-weight: 400;
+    font-size: 3.2rem;
+    line-height: 4.4rem;
+    color: var(--back-secundario);
+}
+
+.carrinho .resumoPedido{
+    width: 80%;
+}
+.carrinho .resumoPedido .listaProdutos{}
+.carrinho .resumoPedido .cardProduto{
+    background: #F5F3F0;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 30px;
+}
+
+.carrinho .resumoPedido .cardProduto .infoNome{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.carrinho .resumoPedido .cardProduto .infoNome img{
+    width: 15rem;
+}
+.carrinho .resumoPedido .cardProduto .infoNome p{
+    font-weight: 700;
+    font-size: 2.2rem;
+    color: var(--marrom);
+    margin-left: 3rem;
+}
+
+.carrinho .resumoPedido .cardProduto .infoPreco{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.carrinho .resumoPedido .cardProduto .infoPreco p{
+    font-style: italic;
+    font-weight: 200;
+    font-size: 2.4rem;
+    color: #2D2D2D;
+}
+.carrinho .resumoPedido .cardProduto .infoPreco img{
+    width: 1.4rem;
+}
+.carrinho .resumoPedido .cardProduto .infoPreco button{
+    background: #E6E6E6;
+    border-radius: 4rem;
+    border: 1px solid #E6E6E6;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 6rem;
+    height: 5rem;
+    margin-left: 4rem;
+    cursor: pointer;
+}
+
+.btnFinalizaPedido{
+    width: 100%;
+}
+.btnFinalizaPedido button{
+    width: 21.9rem;
+    height: 5.1rem;
+    background: var(--vermelho);
+    border: 4px solid var(--vermelho);
+    border-radius: 1rem;
+    text-align: center;
+    font-weight: 400;
+    font-size: 2.2rem;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 1.8rem;
+}
+.btnFinalizaPedido button ~ button{
+    background:white;
+    border: 4px solid var(--vermelho);
+    color:var(--vermelho);
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--marrom);
+}
+::-webkit-scrollbar {
+    width: 6px;
+    background: var(--vermelho);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--laranja);
+}
