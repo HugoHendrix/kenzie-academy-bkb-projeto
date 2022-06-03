@@ -310,6 +310,7 @@ body{
     justify-content: space-between;
     align-items: center;
     padding:0 30px;
+
 }
 
 .carrinho .resumoPedido .cardProduto .infoNome{
@@ -347,16 +348,18 @@ body{
     border-radius: 4rem;
     border: 1px solid #E6E6E6;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    width: 6rem;
+    width: 4.5rem;
     height: 5rem;
     margin-left: 4rem;
     cursor: pointer;
 }
 
 .btnFinalizaPedido{
-    width: 100%;
+    width: 50%;
+    margin-top: 8rem;
 }
 .btnFinalizaPedido button{
     width: 21.9rem;
