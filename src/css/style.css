@@ -410,3 +410,23 @@ body{
     background: var(--laranja);
 }
 
+.profile {
+    margin: auto;
+    width: 50%;
+    
+}
+
+.profile h3 {
+    color: var(--laranja);
+    font-size: 2.5rem;
+    margin-top: 6rem;
+}
+
+.profile p {
+    color: var(--marrom);
+
+}
+
+.profile img {
+    width:12%;
+}
