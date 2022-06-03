@@ -265,6 +265,12 @@ body{
 }
 
 /* RODAPÉ */
+
+.rodape {
+    display: inline-block;
+    width: 100%;
+}
+
 .carrinho .infoResumo{
     background: var(--marrom);
     border-radius: 3.2rem 3.2rem 0px 0px;
@@ -328,13 +334,15 @@ body{
     font-weight: 700;
     font-size: 2.2rem;
     color: var(--marrom);
-    margin-left: 3rem;
+    margin-inline: 3.2rem;
+    padding: 1.6rem;
 }
 
 .carrinho .resumoPedido .cardProduto .infoPreco{
     display: flex;
     justify-content: space-around;
     align-items: center;
+ 
 }
 .carrinho .resumoPedido .cardProduto .infoPreco p{
     font-style: italic;
@@ -343,7 +351,7 @@ body{
     color: #2D2D2D;
 }
 .carrinho .resumoPedido .cardProduto .infoPreco img{
-    width: 1.4rem;
+    width: 1.6rem;
 }
 .carrinho .resumoPedido .cardProduto .infoPreco button{
     background: #E6E6E6;
@@ -361,10 +369,12 @@ body{
 .inforNome, .infoPreco {
     display: flex;
     flex-direction: column;
-    text-align: center;    
+    text-align: center;  
+    padding: 4rem; 
    
 
 }
+
 
 .btnFinalizaPedido{
     width: 50%;
@@ -399,3 +409,4 @@ body{
 ::-webkit-scrollbar-thumb {
     background: var(--laranja);
 }
+
