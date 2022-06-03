@@ -38,8 +38,11 @@ body{
     font-family: 'Nunito', sans-serif;
     font-size: 1.6rem;
     
+    
 }
-
+ ul {
+     list-style:none;
+ }
 .container{
     max-width: 133rem;
     margin: 0 auto;
@@ -164,18 +167,20 @@ body{
 /* SECTION OPÇÕES */
 #section_opcoes {
     display: flex;
-    
+    flex-wrap: wrap;
     
 }
 
 #section_opcoes > div {
     border: 3px solid var(--vermelho);
     border-radius: 8px;
-    margin: 0 1.5rem;
+    margin: 0 0 1.5rem;
+    width: 100%;
     height: 30rem;
     padding: 5rem;
     display: flex;
-    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;    
     align-items: center;
 
   
