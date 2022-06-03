@@ -16,6 +16,7 @@ html, body {
 }
 
 
+
 :root {
     --back-principal:#e5e5e5;
     --back-secundario:#f5f3f0;
@@ -35,18 +36,22 @@ body{
     background-color: var(--gradiente);
     font-family: 'Nunito', sans-serif;
     font-size: 1.6rem;
+    width: 100%;
 }
 
 .container{
     max-width: 133rem;
     margin: 0 auto;
-    padding:3rem;
+    padding: 3rem;
+    display: flex;
+    justify-content: space-around;
 }
 
 /* APLICANDO ESTILO NO CABEÇALHO */
 .cabecalho .container{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    width: 100%;
 }
 
 .cabecalho {
@@ -57,12 +62,15 @@ body{
 /*imagem do whooper gigante*/
 
 .container-whooper {
-    margin: auto;
+    margin-inline: auto;
     display: flex;
     align-items: center;
     justify-content: center;
+       
+}
+
+.container-whooper svg {
     width: 100%;
-    
 }
 
 /*botão começar pedido*/
@@ -71,7 +79,7 @@ body{
     display: flex;    
     justify-content:center;
     align-items: center;
-    width: 21.9rem;
+    width: auto;
     height: 5.1rem;
     background: var(--vermelho);
     border: 4px solid var(--vermelho);
@@ -162,7 +170,8 @@ body{
     border-radius: 8px;
     margin: 1.5rem;
     height: 30rem;
-    width: 23rem;
+    width: auto;
+    padding: 5rem;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -257,6 +266,7 @@ body{
 .carrinho .container{
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
 }
 .carrinho {
     background-color: var(--back-secundario);
@@ -282,7 +292,8 @@ body{
 }
 
 .carrinho .resumoPedido{
-    width: 80%;
+    width: auto;
+  
 }
 .carrinho .resumoPedido .listaProdutos{}
 .carrinho .resumoPedido .cardProduto{
