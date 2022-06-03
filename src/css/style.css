@@ -298,8 +298,9 @@ body{
     color: var(--back-secundario);
 }
 
+
 .carrinho .resumoPedido{
-    width: auto;
+    width: 100%;
   
 }
 .carrinho .resumoPedido .listaProdutos{}
@@ -308,7 +309,7 @@ body{
     border-radius: 15px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: space-between;
     padding:0 30px;
 
 }
@@ -320,7 +321,8 @@ body{
     
 }
 .carrinho .resumoPedido .cardProduto .infoNome img{
-    width: 15rem;
+    width: 100%;
+    margin: auto;
 }
 .carrinho .resumoPedido .cardProduto .infoNome p{
     font-weight: 700;
@@ -348,13 +350,20 @@ body{
     border-radius: 4rem;
     border: 1px solid #E6E6E6;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     width: 4.5rem;
     height: 5rem;
     margin-left: 4rem;
     cursor: pointer;
+}
+
+.inforNome, .infoPreco {
+    display: flex;
+    flex-direction: column;
+    text-align: center;    
+   
+
 }
 
 .btnFinalizaPedido{
