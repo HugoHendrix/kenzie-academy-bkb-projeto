@@ -180,6 +180,13 @@ body{
   
 }
 
+@media screen and (min-width: 480px) {
+    #section-opçoes {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 
 #section_opcoes > div > img {
     width: 10rem;
